@@ -1,1 +1,1 @@
-include ':app', ':javajokes', ':androidantics'
+include ':app', ':javajokes', ':androidantics', ':backend'
