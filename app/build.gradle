@@ -19,14 +19,14 @@ android {
         }
     }
 
-//    productFlavors {
-//        free {
-//            applicationId "com.example.udacity.declaringflavors.free"
-//        }
-//        paid {
-//            applicationId "com.example.udacity.declaringflavors.paid"
-//        }
-//    }
+    productFlavors {
+        free {
+            applicationId "com.example.udacity.declaringflavors.free"
+        }
+        paid {
+            applicationId "com.example.udacity.declaringflavors.paid"
+        }
+    }
 }
 
 dependencies {
