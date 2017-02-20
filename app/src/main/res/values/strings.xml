@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Build it Bigger</string>
+    <string name="app_name">Android Antics</string>
     <string name="instructions">Press the button for a decent joke</string>
     <string name="button_text">Want to hear a Joke?</string>
     <string name="action_settings">Settings</string>

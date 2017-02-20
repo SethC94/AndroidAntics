@@ -1,24 +1,32 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'AndroidAntics'
+            keyPassword 'Creasmankid5'
+            storeFile file('C:/Users/BootyCall2.0/keystore.jks')
+            storePassword 'Creasmankid5'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion "24.0.3"
-
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
-
     productFlavors {
         free {
             applicationId "com.example.udacity.declaringflavors.free"
@@ -30,14 +38,15 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile project(":androidantics")
-    compile project(":javajokes")
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(path: ':backend', configuration: 'android-endpoints')
+    compile project(':androidantics')
+    compile project(':javajokes')
+    freeCompile 'com.google.android.gms:play-services-ads:9.8.0'
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.google.android.gms:play-services-ads:10.0.1'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
-    compile project(path: ':backend', configuration: 'android-endpoints')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
 }
