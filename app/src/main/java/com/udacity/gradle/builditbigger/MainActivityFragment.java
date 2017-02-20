@@ -21,6 +21,7 @@ public class MainActivityFragment extends Fragment implements OnJokeReceivedList
 
     private String mJoke;
     private InterstitialAd mInterstitialAd;
+
     public MainActivityFragment() {
     }
 
@@ -65,8 +66,9 @@ public class MainActivityFragment extends Fragment implements OnJokeReceivedList
     }
 
     public void fetchJoke(){
-               new EndpointsAsyncTask().execute(this);
+        new EndpointsAsyncTask().execute(this);
     }
+
 
 
 }

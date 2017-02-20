@@ -1,6 +1,6 @@
 {
  "kind": "discovery#restDescription",
- "etag": "\"ODRTh3xaRR64wpeXJSlF33HMN-0/EQqMJJsKSELbD3T_kPVQGsnJ298\"",
+ "etag": "\"ODRTh3xaRR64wpeXJSlF33HMN-0/3y7cITCBlFOvM9uvUBy_3QkRusU\"",
  "discoveryVersion": "v1",
  "id": "myApi:v1",
  "name": "myApi",
@@ -86,17 +86,17 @@
  "methods": {
   "sayHi": {
    "id": "myApi.sayHi",
-   "path": "{name}",
+   "path": "{joke}",
    "httpMethod": "POST",
    "parameters": {
-    "name": {
+    "joke": {
      "type": "string",
      "required": true,
      "location": "path"
     }
    },
    "parameterOrder": [
-    "name"
+    "joke"
    ],
    "response": {
     "$ref": "MyBean"

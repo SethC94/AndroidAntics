@@ -1,19 +1,13 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-
-import com.example.JokeLibrary;
-import com.example.androidantics.AndroidAntics;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    public final static String INTENT_KEY = "JOKE_INTENT_KEY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,15 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
 
-
-    }
-
-    public void getJoke(View view) {
-        Intent intent = new Intent(this, AndroidAntics.class);
-        JokeLibrary jokeSource = new JokeLibrary();
-        String joke = jokeSource.getJoke();
-        intent.putExtra(AndroidAntics.INTENT_KEY, joke);
-        startActivity(intent);
 
     }
 
