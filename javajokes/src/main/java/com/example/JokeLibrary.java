@@ -15,6 +15,10 @@ public class JokeLibrary {
                 joke = "What did the pirate say when he turned 80? \n Aye Matey";
                 break;
 
+            case 2:
+                joke = " What does a nosey pepper do? Get jalapeño business";
+                break;
+
 
             default:
                 joke = "Patient: Doctor! You've got to help me! Whats growing out of my ears!\n" +

@@ -16,8 +16,8 @@
       <configuration>
         <option name="HTTP_ADDRESS" value="0.0.0.0" />
         <option name="HTTP_PORT" value="8080" />
-        <option name="WAR_DIR" value="C:\Users\BootyCall2.0\Desktop\ASP\ud867-master\FinalProject\backend\build\exploded-app" />
-        <option name="WEB_APP_DIR" value="C:\Users\BootyCall2.0\Desktop\ASP\ud867-master\FinalProject\backend\src\main\webapp" />
+        <option name="WAR_DIR" value="C:\Users\BootyCall2.0\Desktop\ASP\AndroidAntics\backend\build\exploded-app" />
+        <option name="WEB_APP_DIR" value="C:\Users\BootyCall2.0\Desktop\ASP\AndroidAntics\backend\src\main\webapp" />
         <option name="APPENGINE_SDKROOT" value="C:\Users\BootyCall2.0\.gradle\appengine-sdk\appengine-java-sdk-1.9.34" />
       </configuration>
     </facet>
@@ -27,14 +27,14 @@
     <output-test url="file://$MODULE_DIR$/build/classes/test" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/build/generated-source/endpoints/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/endpointsSrc/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated-source/endpoints/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/endpointsSrc/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/functionalTest/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/functionalTest/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
@@ -45,6 +45,5 @@
     <orderEntry type="library" exported="" name="appengine-endpoints-deps-1.9.34" level="project" />
     <orderEntry type="library" exported="" name="servlet-api-2.5" level="project" />
     <orderEntry type="library" exported="" name="appengine-api-1.0-sdk-1.9.34" level="project" />
-    <orderEntry type="library" exported="" name="backend.backend-android-endpoints" level="project" />
   </component>
 </module>
